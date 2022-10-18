@@ -16,7 +16,8 @@ public class Car {
     }
 
     void car() {
-        System.out.println("Марка автомобиля: "+this.brand+" Модель: "+this.model+" Год производства: "+this.productionYear+" Страна производитель: "+this.productionCountry+
-                " Цвет кузова: "+this.color+" Обьем двигателя: "+this.engineVolume);
+        System.out.println("Марка автомобиля: " + this.brand + " Модель: " + this.model +
+                " Год производства: " + this.productionYear + " Страна производитель: " + this.productionCountry +
+                " Цвет кузова: " + this.color + " Обьем двигателя: " + this.engineVolume);
     }
 }
