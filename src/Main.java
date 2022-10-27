@@ -1,9 +1,10 @@
 public class Main {
     public static void main(String[] args) {
         Human maksim = new Human(-1989, "Максим", "Минск","бренд-менеджер");
-        Human anna = new Human(1993, "", "Москва","методист образовательных программ");
-        Human katya = new Human(1994, "Катя", "Калининград","");
-        Human artem = new Human(1995, "Артем", "","директор по развитию бизнеса");
+        Human anna = new Human(1993, null, "Москва","методист образовательных программ");
+        Human katya = new Human(1994, "Катя", "Калининград",null);
+        Human artem = new Human(1995, "Артем", null,"директор по развитию бизнеса");
+        Human vladimir = new Human(2001, "Владимир", "Казань",null);
         Car lada = new Car("","Granta.",1.7,"желтый.",2015,"Россия.");
         Car audi = new Car("Audi.","",3.0,"черный.",2020,"Германия.");
         Car bmw = new Car("BMW.","Z8.",0.0,"черный.",2021,"Германия.");
@@ -15,6 +16,7 @@ public class Main {
         anna.human();
         katya.human();
         artem.human();
+        vladimir.human();
         System.out.println();
         lada.car();
         audi.car();
