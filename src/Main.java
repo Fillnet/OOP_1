@@ -15,8 +15,8 @@ public class Main {
                 "Россия.",
                 "Auto",
                 "Sedan",
-                null,
-                4);
+                "х034г0535",
+                4,null, null);
 //        Car audi = new Car("Audi.","",3.0,"черный.",2020,"Германия.");
 //        Car bmw = new Car("BMW.","Z8.",0.0,"черный.",2021,"Германия.");
 //        Car kia = new Car("Kia.","Sportage 4-го поколения.",2.4,"",2018,"Южная Корея.");
@@ -29,6 +29,9 @@ public class Main {
         vladimir.human();
         System.out.println();
         car(lada);
+        lada.setRegistrationNumber("xc012xc01263");
+        car(lada);
+
     }
 
     private static void car(Car car) {
@@ -38,6 +41,6 @@ public class Main {
                 " Коробка передач: " + car.getTransmission() + " \nТип кузова: " + car.getBodyType() +
                 " Регистрационный номер: " + car.getRegistrationNumber() +
                 " Количество мест: " + car.getNumberSeats() +
-                " Тип резины: " + car.getTires());
+                " Тип резины: " + car.getTires() + );
     }
 }
